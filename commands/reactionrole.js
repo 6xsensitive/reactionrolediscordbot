@@ -18,6 +18,7 @@ module.exports = {
       if (!link) {
         const embed = new EmbedBuilder()
           .setColor('Grey')
+          .setTitle('Command: Reaction Role')
           .setDescription('Usage: `,rr remove <message link>`');
         return message.channel.send({ embeds: [embed] });
       }
@@ -123,7 +124,7 @@ module.exports = {
 
     const embed = new EmbedBuilder()
       .setColor('Grey')
-      .setTitle('Reaction Role')
+      .setTitle('Command: Reaction Role')
       .setDescription('Usage:\n`• ,rr add <message link> <emoji> <@role>`\n`• ,rr remove <message link>`');
     return message.channel.send({ embeds: [embed] });
   }
