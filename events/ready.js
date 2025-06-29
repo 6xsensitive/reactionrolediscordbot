@@ -1,5 +1,5 @@
 module.exports = (client) => {
-  console.log(`${client.user.tag} is online!`);
+  console.log(`Signed in as${client.user.tag}`);
 
   client.user.setPresence({
     status: 'online',
